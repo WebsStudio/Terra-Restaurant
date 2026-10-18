@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terra, cocina de temporada y producto cercano en Madrid.">
+  <title>Terra · Cocina de temporada</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio">TERRA <span>cocina de temporada</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#nosotros">Nosotros</a><a href="#carta">La carta</a><a href="#visitanos">Visítanos</a>
+      <a class="nav-button" href="tel:+34910000000">Reservar mesa</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio"><div class="wrap hero-copy">
+      <span class="eyebrow">Cocina honesta · Madrid</span>
+      <h1>El sabor de<br>sentirse en casa.</h1>
+      <p>Platos de temporada, producto cercano y una mesa siempre preparada para compartir.</p>
+      <a class="button" href="tel:+34910000000">RESERVA TU MESA</a>
+    </div></section>
+    <section class="section" id="nosotros"><div class="wrap intro">
+      <div><span class="eyebrow">Bienvenidos a Terra</span><h2>Lo sencillo, hecho con cariño.</h2>
+        <p class="intro-copy">Creemos en cocinar con lo que nos da cada estación. Por eso nuestra carta cambia, nuestros ingredientes vienen de productores cercanos y cada visita tiene algo especial.</p>
+      </div><div class="photo" role="img" aria-label="Mesa preparada en un restaurante acogedor"></div>
+    </div></section>
+    <section class="section section-soft" id="carta"><div class="wrap">
+      <div class="menu-head"><span class="eyebrow">Producto de temporada</span><h2 class="section-title">La carta</h2>
+        <p>Platos para compartir, recetas de casa y algo dulce para terminar. Pregúntanos por los alérgenos y los platos del día.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar carta">
+        <button class="filter active" data-filter="todos" aria-pressed="true">Toda la carta</button>
+        <button class="filter" data-filter="entrantes" aria-pressed="false">Para empezar</button>
+        <button class="filter" data-filter="principales" aria-pressed="false">Principales</button>
+        <button class="filter" data-filter="postres" aria-pressed="false">Postres</button>
+      </div>
+      <div class="menu-grid">
+        <article class="dish" data-category="entrantes"><div class="dish-line"><h3>Pan de masa madre</h3><span class="dish-price">4 €</span></div><p>Horneado cada mañana, con aceite de oliva virgen extra.</p></article>
+        <article class="dish" data-category="entrantes"><div class="dish-line"><h3>Tomates de temporada</h3><span class="dish-price">12 €</span></div><p>Tomates variados, albahaca fresca y aceite de la sierra.</p></article>
+        <article class="dish" data-category="entrantes"><div class="dish-line"><h3>Patatas bravas de la casa</h3><span class="dish-price">9 €</span></div><p>Patata crujiente, salsa brava suave y alioli casero.</p></article>
+        <article class="dish" data-category="entrantes"><div class="dish-line"><h3>Croquetas cremosas</h3><span class="dish-price">13 €</span></div><p>Seis unidades; pregunta por el sabor de hoy.</p></article>
+        <article class="dish" data-category="entrantes"><div class="dish-line"><h3>Burrata y melocotón</h3><span class="dish-price">15 €</span></div><p>Burrata fresca, fruta de temporada, rúcula y pistacho.</p></article>
+        <article class="dish" data-category="entrantes"><div class="dish-line"><h3>Setas al ajillo</h3><span class="dish-price">14 €</span></div><p>Setas salteadas, ajo, perejil y un toque de limón.</p></article>
+        <article class="dish" data-category="principales"><div class="dish-line"><h3>Arroz meloso de setas</h3><span class="dish-price">18 €</span></div><p>Arroz de temporada, setas, hierbas y parmesano.</p></article>
+        <article class="dish" data-category="principales"><div class="dish-line"><h3>Pollo de corral asado</h3><span class="dish-price">21 €</span></div><p>Con patatas panaderas y jugo de romero.</p></article>
+        <article class="dish" data-category="principales"><div class="dish-line"><h3>Merluza a la plancha</h3><span class="dish-price">23 €</span></div><p>Pesca del día, verduras verdes y salsa de limón.</p></article>
+        <article class="dish" data-category="principales"><div class="dish-line"><h3>Calabaza asada</h3><span class="dish-price">17 €</span></div><p>Calabaza, crema de yogur, garbanzos crujientes y hierbas.</p></article>
+        <article class="dish" data-category="principales"><div class="dish-line"><h3>Entrecot a la brasa</h3><span class="dish-price">26 €</span></div><p>Madurado, con ensalada fresca y patatas doradas.</p></article>
+        <article class="dish" data-category="postres"><div class="dish-line"><h3>Tarta de queso</h3><span class="dish-price">8 €</span></div><p>Cremosa, horneada al momento y con fruta de temporada.</p></article>
+        <article class="dish" data-category="postres"><div class="dish-line"><h3>Flan de vainilla</h3><span class="dish-price">7 €</span></div><p>Hecho en casa, con caramelo y nata ligeramente montada.</p></article>
+        <article class="dish" data-category="postres"><div class="dish-line"><h3>Fruta de temporada</h3><span class="dish-price">6 €</span></div><p>Fruta fresca con sorbete de limón y menta.</p></article>
+      </div>
+      <p class="menu-note">Precios e ingredientes de ejemplo. Consulta al equipo sobre alérgenos y disponibilidad.</p>
+    </div></section>
+    <section class="quote"><blockquote>“La buena cocina empieza con buenos ingredientes y acaba alrededor de una mesa.”</blockquote><span>La filosofía de Terra</span></section>
+    <section class="section" id="visitanos"><div class="wrap visit">
+      <div><span class="eyebrow">Nos encantará verte</span><h2>Tu mesa te espera.</h2><p>Calle del Ejemplo, 12 · Madrid</p><p><a href="tel:+34910000000">+34 910 000 000</a> · <a href="mailto:hola@terracocina.es">hola@terracocina.es</a></p><a class="button" href="https://maps.google.com/?q=Madrid">CÓMO LLEGAR</a></div>
+      <div class="hours"><div><strong>Martes – Viernes</strong><span>13:00 – 23:00</span></div><div><strong>Sábado</strong><span>13:00 – 23:30</span></div><div><strong>Domingo</strong><span>13:00 – 17:00</span></div><div><strong>Lunes</strong><span>Cerrado</span></div></div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><p>© <span id="year">2026</span> Terra · Cocina de temporada</p><p>Una mesa para disfrutar, cada día.</p></div></footer>
+</body></html>
